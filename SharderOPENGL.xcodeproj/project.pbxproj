@@ -15,6 +15,10 @@
 		321B2ACC21A16E4800AE196C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B2ACB21A16E4800AE196C /* main.m */; };
 		321B2AD621A16E4800AE196C /* SharderOPENGLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B2AD521A16E4800AE196C /* SharderOPENGLTests.m */; };
 		321B2AE121A16E4800AE196C /* SharderOPENGLUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B2AE021A16E4800AE196C /* SharderOPENGLUITests.m */; };
+		321B2AF121A171D500AE196C /* fragmentsharder.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 321B2AEF21A171D500AE196C /* fragmentsharder.glsl */; };
+		321B2AF221A171D500AE196C /* vertexsharder.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 321B2AF021A171D500AE196C /* vertexsharder.glsl */; };
+		321B2AF521A1728700AE196C /* SharderManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B2AF421A1728700AE196C /* SharderManger.m */; };
+		321B2AF821A1A04500AE196C /* DisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B2AF721A1A04500AE196C /* DisplayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		321B2ADC21A16E4800AE196C /* SharderOPENGLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharderOPENGLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		321B2AE021A16E4800AE196C /* SharderOPENGLUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharderOPENGLUITests.m; sourceTree = "<group>"; };
 		321B2AE221A16E4800AE196C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		321B2AEF21A171D500AE196C /* fragmentsharder.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragmentsharder.glsl; sourceTree = "<group>"; };
+		321B2AF021A171D500AE196C /* vertexsharder.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertexsharder.glsl; sourceTree = "<group>"; };
+		321B2AF321A1728700AE196C /* SharderManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharderManger.h; sourceTree = "<group>"; };
+		321B2AF421A1728700AE196C /* SharderManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharderManger.m; sourceTree = "<group>"; };
+		321B2AF621A1A04500AE196C /* DisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayView.h; sourceTree = "<group>"; };
+		321B2AF721A1A04500AE196C /* DisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,7 @@
 		321B2ABB21A16E4700AE196C /* SharderOPENGL */ = {
 			isa = PBXGroup;
 			children = (
+				321B2AEE21A1715300AE196C /* shader */,
 				321B2ABC21A16E4700AE196C /* AppDelegate.h */,
 				321B2ABD21A16E4700AE196C /* AppDelegate.m */,
 				321B2ABF21A16E4700AE196C /* ViewController.h */,
@@ -110,6 +121,8 @@
 				321B2AC721A16E4800AE196C /* LaunchScreen.storyboard */,
 				321B2ACA21A16E4800AE196C /* Info.plist */,
 				321B2ACB21A16E4800AE196C /* main.m */,
+				321B2AF621A1A04500AE196C /* DisplayView.h */,
+				321B2AF721A1A04500AE196C /* DisplayView.m */,
 			);
 			path = SharderOPENGL;
 			sourceTree = "<group>";
@@ -130,6 +143,17 @@
 				321B2AE221A16E4800AE196C /* Info.plist */,
 			);
 			path = SharderOPENGLUITests;
+			sourceTree = "<group>";
+		};
+		321B2AEE21A1715300AE196C /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				321B2AEF21A171D500AE196C /* fragmentsharder.glsl */,
+				321B2AF021A171D500AE196C /* vertexsharder.glsl */,
+				321B2AF321A1728700AE196C /* SharderManger.h */,
+				321B2AF421A1728700AE196C /* SharderManger.m */,
+			);
+			path = shader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				321B2AF221A171D500AE196C /* vertexsharder.glsl in Resources */,
 				321B2AC921A16E4800AE196C /* LaunchScreen.storyboard in Resources */,
+				321B2AF121A171D500AE196C /* fragmentsharder.glsl in Resources */,
 				321B2AC621A16E4800AE196C /* Assets.xcassets in Resources */,
 				321B2AC421A16E4700AE196C /* Main.storyboard in Resources */,
 			);
@@ -263,8 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				321B2AC121A16E4700AE196C /* ViewController.m in Sources */,
+				321B2AF521A1728700AE196C /* SharderManger.m in Sources */,
 				321B2ACC21A16E4800AE196C /* main.m in Sources */,
 				321B2ABE21A16E4700AE196C /* AppDelegate.m in Sources */,
+				321B2AF821A1A04500AE196C /* DisplayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,15 +461,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7UKCH28MMH;
 				INFOPLIST_FILE = SharderOPENGL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ai.think.ios.SharderOPENGL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fc6c7e1f-732e-4030-9902-d34c330f438c";
+				PROVISIONING_PROFILE_SPECIFIER = HoverEnterpriseDevelopment20161231;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -450,15 +481,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7UKCH28MMH;
 				INFOPLIST_FILE = SharderOPENGL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ai.think.ios.SharderOPENGL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fc6c7e1f-732e-4030-9902-d34c330f438c";
+				PROVISIONING_PROFILE_SPECIFIER = HoverEnterpriseDevelopment20161231;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
