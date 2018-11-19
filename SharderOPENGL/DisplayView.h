@@ -13,4 +13,6 @@
 - (void)display;
 
 -(void)praperDisplay;
+
+@property(nonatomic, strong) EAGLContext *currentContext;
 @end

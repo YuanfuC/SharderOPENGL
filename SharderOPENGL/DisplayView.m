@@ -21,7 +21,6 @@ const SceneVertex vertices[] = {
 
 
 @interface DisplayView()
-@property(nonatomic, strong) EAGLContext *currentContext;
 
 @property (nonatomic, assign) GLuint renderBufferID;
 @property (nonatomic, assign) GLuint frameBufferID;

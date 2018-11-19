@@ -28,11 +28,9 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        NSLog(@"This is dispaly");
-        [self.displayview display];
-    });
+    glClearColor(1.0, 0, 0, 1.0);
+    glClear(GL_COLOR_BUFFER_BIT);
+    [self.displayview.currentContext presentRenderbuffer:GL_RENDERBUFFER];
 }
 
 - (void)didReceiveMemoryWarning {
