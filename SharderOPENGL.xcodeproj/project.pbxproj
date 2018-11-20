@@ -19,6 +19,9 @@
 		321B2AF221A171D500AE196C /* vertexsharder.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 321B2AF021A171D500AE196C /* vertexsharder.glsl */; };
 		321B2AF521A1728700AE196C /* SharderManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B2AF421A1728700AE196C /* SharderManger.m */; };
 		321B2AF821A1A04500AE196C /* DisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B2AF721A1A04500AE196C /* DisplayView.m */; };
+		321B2AFA21A25D5800AE196C /* 1436321700534.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 321B2AF921A25D5800AE196C /* 1436321700534.jpg */; };
+		321B2AFD21A2689B00AE196C /* UIImage+CGData.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B2AFC21A2689B00AE196C /* UIImage+CGData.m */; };
+		321B2AFF21A2B7BC00AE196C /* imagedata.rgb32 in Resources */ = {isa = PBXBuildFile; fileRef = 321B2AFE21A2B7BC00AE196C /* imagedata.rgb32 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,10 @@
 		321B2AF421A1728700AE196C /* SharderManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharderManger.m; sourceTree = "<group>"; };
 		321B2AF621A1A04500AE196C /* DisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayView.h; sourceTree = "<group>"; };
 		321B2AF721A1A04500AE196C /* DisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayView.m; sourceTree = "<group>"; };
+		321B2AF921A25D5800AE196C /* 1436321700534.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1436321700534.jpg; sourceTree = "<group>"; };
+		321B2AFB21A2689B00AE196C /* UIImage+CGData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGData.h"; sourceTree = "<group>"; };
+		321B2AFC21A2689B00AE196C /* UIImage+CGData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGData.m"; sourceTree = "<group>"; };
+		321B2AFE21A2B7BC00AE196C /* imagedata.rgb32 */ = {isa = PBXFileReference; lastKnownFileType = file; path = imagedata.rgb32; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +98,8 @@
 		321B2AB021A16E4700AE196C = {
 			isa = PBXGroup;
 			children = (
+				321B2AFE21A2B7BC00AE196C /* imagedata.rgb32 */,
+				321B2AF921A25D5800AE196C /* 1436321700534.jpg */,
 				321B2ABB21A16E4700AE196C /* SharderOPENGL */,
 				321B2AD421A16E4800AE196C /* SharderOPENGLTests */,
 				321B2ADF21A16E4800AE196C /* SharderOPENGLUITests */,
@@ -123,6 +132,8 @@
 				321B2ACB21A16E4800AE196C /* main.m */,
 				321B2AF621A1A04500AE196C /* DisplayView.h */,
 				321B2AF721A1A04500AE196C /* DisplayView.m */,
+				321B2AFB21A2689B00AE196C /* UIImage+CGData.h */,
+				321B2AFC21A2689B00AE196C /* UIImage+CGData.m */,
 			);
 			path = SharderOPENGL;
 			sourceTree = "<group>";
@@ -260,7 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				321B2AF221A171D500AE196C /* vertexsharder.glsl in Resources */,
+				321B2AFA21A25D5800AE196C /* 1436321700534.jpg in Resources */,
 				321B2AC921A16E4800AE196C /* LaunchScreen.storyboard in Resources */,
+				321B2AFF21A2B7BC00AE196C /* imagedata.rgb32 in Resources */,
 				321B2AF121A171D500AE196C /* fragmentsharder.glsl in Resources */,
 				321B2AC621A16E4800AE196C /* Assets.xcassets in Resources */,
 				321B2AC421A16E4700AE196C /* Main.storyboard in Resources */,
@@ -293,6 +306,7 @@
 				321B2ACC21A16E4800AE196C /* main.m in Sources */,
 				321B2ABE21A16E4700AE196C /* AppDelegate.m in Sources */,
 				321B2AF821A1A04500AE196C /* DisplayView.m in Sources */,
+				321B2AFD21A2689B00AE196C /* UIImage+CGData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
